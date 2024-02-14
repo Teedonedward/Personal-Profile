@@ -193,4 +193,20 @@ body {
     box-shadow: 4px 4px 6px var(--Dark-Grey),
                 -4px -4px 6px var(--Dark-Grey);
     }
+
+    .intro span {
+    color: var(--black);
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro f1 {
+    font-size: 8px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
 }
