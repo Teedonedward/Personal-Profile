@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Orange: #fa9444;
+    --White: #fff;
+    --Black: #000;
+    --Dark-Grey: #4f4f4f;
+    --lite-Grey: #f4f4f4;
+    --Grey: #555555;
+    --Yellow: #d4dc30;
+    --Magenta: #ce1e61;
+    --Cyan: #1ca1db;
+    --Blue: #052291;
+    --Shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background-color: var(--lite-Grey);
+}
+
+.navbar {
+    width: 100%;
+    background-color: var(--Dark-Grey);
+}
+
+.navbar ul {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li {
+    list-style-type: none;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: var(--White);
+    background-color: var(--Orange);
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px var(--Black);
+    transition: all 450ms ease-in-out;
+}
+
+.navbar li a:hover {
+    font-size: 16px;
+    background-color: #8a4008;
+    box-shadow: 1px 1px 3px var(--Orange);
+}
+
+.introduction {
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction img {
+    width: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 4px 4px 6px var(--Dark-Grey),
+                -4px -4px 6px var(--Dark-Grey);
+}
+
+.introduction img::before {
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 150px;
+    top: 0;
+    left: 0;
+    border-top: 5px solid var(--Orange);
+    border-right: 5px solid var(--Blue);
+    border-bottom: 5px solid var(--Yellow);
+    border-left: 5px solid var(--Cyan);
+    border-radius: 50%;
+    z-index: 50;
+    animation: imgrotate 3s infinite linear;
+}
+
+@keyframes imgrotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.introduction div {
+    padding: 20px;
+    padding-right: 40px;
+    margin: 0 auto;
+}
+
+.introduction div p {
+    color: var(--Dark-Grey);
+    font-size: 14px;
+    text-align: justify;
+    line-height: 18px;
+}
+
+.skills {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #d9d7d782;
+    border-radius: 15px;
+}
+
+.skills ul {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+}
+
+.skills li {
+    list-style-type: square;
+    color: var(--Dark-Grey);
+    padding: 5px;
+    font-size: 14px;
+}
