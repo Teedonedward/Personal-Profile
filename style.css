@@ -117,6 +117,21 @@ body {
     line-height: 18px;
 }
 
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro span {
+    color: var(--black);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.intro f1 {
+    font-size: 12px;
+}
+
 .skills {
     width: 95%;
     margin: 0 auto;
@@ -136,4 +151,10 @@ body {
     color: var(--Dark-Grey);
     padding: 5px;
     font-size: 14px;
+}
+
+.contact {
+    width: 100%;
+    background-color: var(--dark-grey);
+    padding: 20px;
 }
