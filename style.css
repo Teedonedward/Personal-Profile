@@ -62,7 +62,7 @@ body {
 
 .navbar li a:hover {
     font-size: 16px;
-    background-color: #8a4008;
+    border: 2px solid var(--orange);
     box-shadow: 1px 1px 3px var(--Orange);
 }
 
@@ -160,6 +160,14 @@ body {
 
 
 @media (max-width: 991px) {
+.navbar ul {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+    
     .navbar li a {
         padding: 3px 8px;
         border-radius: 5px;
@@ -171,7 +179,7 @@ body {
 
     .navbar li a:hover {
         font-size: 9px;
-        background-color: #8a4008;
+        border: 1px solid var(--orange);
         box-shadow: 1px 1px 3px var(--Orange);
         }
     
